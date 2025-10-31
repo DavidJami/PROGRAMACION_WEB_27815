@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Formulario
+    </title>
+</head>
+<body>
+    <header>
+        <h1>INGRESAR DATOS DEL ESTUDIANTE</h1>
+    </header>   
+    <main>
+        <form action="datos.html" method="post">
+            <label for="txt_nombre">INGRESE SUS NOMBRES</label>
+            <!-- Campo para el nombre del estudiante -->
+            <input type="text" 
+            name="txt_nombre" 
+            id ="txt_nombre" 
+            placeholder="INGRESE SUS NOMBRES COMPLETOS" 
+            autofocus 
+            maxlength="7" 
+            minlength="2"
+            required        
+            >
+            <br>
+            <!-- Campo para el apellido del estudiante -->
+            <label for="apellidos">INGRESE SUS APELLIDOS</label>
+            <input type="text"
+            name="apellidos"
+            id="apellidos"
+            placeholder="INGRESE SU APELLIDO"
+            required
+            >
+            <br>
+            <!-- Campo para el correo del estudiante -->
+            <label for="email">Ingrese su email</label>
+            <input type="email" 
+            name="email" 
+            id="email" 
+            placeholder="INGRESE EL EMAIL">
+
+            <!-- Campo para la edad del estudiante -->
+            <br>
+            <label for="edad">INGRESE SU EDAD</label>
+            <input type="number" 
+            name="edad" 
+            id="edad" 
+            placeholder="Ejem 20" 
+            max="50" 
+            min="15" 
+            value="15">
+            
+            <!-- DATE-->
+            
+            <br>
+            <label for="fecha_nacimiento">INGRESE SU FECHA DE NACIMIENTO</label>
+            <input type="date" 
+            name="fecha_nacimiento" 
+            id="fecha_nacimiento"  
+            min="2025-10-10"
+            max="2025-10-30"
+
+            >
+            <br>
+            <!--RADIO  -->
+            <label for="">SELECCIONE SU SEXO</label>
+            <br>
+            <label for="hombre">SELECCIONE SU GENERO</label>
+            <input type="radio" 
+            name="sexo"
+            id="hombre"
+            value="hombre"
+
+            >
+             <br>
+            <label for="hombre">HOMBRE</label>
+            <input type="radio" 
+            name="sexo"
+            id="hombre"
+            value="hombre"
+            >
+
+            <br>
+            <label for="mujer">MUJER</label>
+            <input type="radio" 
+            name="sexo"
+            id="mujer"
+            value="mujer"
+        
+            
+            >
+            <br>
+            <!-- CHECKBOX  -->
+            <label for="lunes">LUNES</label>
+            <input type="checkbox"
+            name="dia[]"
+            id="lunes"  
+            value="lunes"
+            checked
+            >
+            <br>
+            <label for="martes">MARTES</label>
+            <input type="checkbox"
+            name="dia[]"
+            id="martes"  
+            value="martes"
+            disabled
+            >
+            <br>
+            <label for="miercoles">MIERCOLES</label>
+            <input type="checkbox"
+            name="dia[]"
+            id="miercoles"  
+            value="miercoles"
+            checked
+            >
+            <br>
+            <label for="jueves">JUEVES</label>
+            <input type="checkbox"
+            name="dia[]"
+            id="jueves"  
+            value="jueves"
+            disabled
+            >
+            <br>
+            <label for="viernes">VIERNES</label>
+            <input type="checkbox"
+            name="dia[]"
+            id="viernes"  
+            value="viernes"
+            checked
+            >
+            <br>
+            <!-- FILE  -->
+            <label for="foto">CARGUE SU FOTO DE PERFIL</label>
+            <input type="file"  
+            name="foto"
+            id="foto"
+            accept=".png, .pdf, .doc, .docx, image/*"
+            >
+            <br>
+            <!-- COLOR  -->
+            <label for="color">SELECCIONE SU COLOR FAVORITO</label>
+            <input type="color"
+            name="color"
+            id="color"
+            value="#ff0000"
+            >
+            <br>
+            <!-- range  -->
+             <label for="estatura">ESTATURA</label>
+            <input type="range"
+            name="estatura"
+            id="estatura"
+            min="10"
+            max="50"   
+            value="50"
+            
+            >
+
+            <label for="contraseña">CONTRASEÑA</label>
+            <input type="password"
+            name="contraseña"
+            id="contraseña"
+            placeholder="INGRESE SU CONTRASEÑA"
+            required
+            >
+
+            <br> 
+            <!-- search -->
+            <label for="cedula">BUSCAR POR CEDULA</label>
+            <input type="search"
+            name="cedula"
+            id="cedula"
+            >
+            <br>
+            <!-- RESET -->
+            <input 
+            type="reset" 
+            value="LIMPIAR FORMULARIO" >
+            
+            <!-- SUBMIT -->
+            <input 
+            type="submit" 
+            name="enviar"
+            id="enviar"  
+            value="ENVIAR FORMULARIO" >
+
+        </form>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>

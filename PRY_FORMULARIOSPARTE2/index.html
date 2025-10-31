@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECT EN FORMULARIO</title>
+</head>
+<body>
+    <header>
+        <h1>SELECT EN FORMULARIOS</h1>
+    </header>
+    <main>
+         <form action="server.html" method="get">
+            <!--SELECT FORM-->
+            <label for="lista_frutas">LISTA DE FRUTAS</label>
+            <input type="hidden" value="1728394650" name="cedula del usuario">
+            <select name="lista de frutas" id="lista de frutas" required autofocus>
+                <option value=""></option>
+                <option value="naranja">NARANJA</option>
+                
+                <option value="uva" selected>UVA</option>
+                <option value="pera">PERA</option>
+                <option value="zapato" disabled>ZAPATOS</option>
+            </select>
+            <button type="submit"> ENVIAR AL SERVIDOR</button>
+        </form>
+    </main>
+    <footer>
+        <p>
+            c 2025
+        </p>
+    </footer>
+</body>
+</html>

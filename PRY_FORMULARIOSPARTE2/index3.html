@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pedido de Compra</title>
+</head>
+<body>
+    <header>
+        <h1>REGISTRO DE PEDIDO DE COMPRA</h1>
+    </header>
+    <main>
+        <form action="server.html" method="get">
+            
+            <label for="cedula">INGRESE SU NUMERO DE CEDULA</label>
+            <br>
+            <input type="text" name="cedula" id="text" placeholder="Ingrese 10 dígitos" autofocus maxlength="10" minlength="10" pattern="[0-9]{10}" required>
+            <br>
+            
+            <label for="id_factura">INGRESE EL ID DE LA FACTURA (FACTUR-2025-10-27-pm)</label>
+            <br>
+            <input type="text" name="id_factura" id="id_factura" placeholder="FACTUR-2025-10-27-pm" pattern="FACTUR-[0-9]{4}-[0-9]{2}-[0-9]{2}-(pm)" maxlength="22" required>
+            <br>
+            
+            <label for="productos_select">SELECCIONE LOS PRODUCTOS</label>
+            <br>
+            <select name="productos_select" id="productos_select" multiple required>
+                <option value="" disabled></option>
+                <optgroup label="ELECTRONICOS">
+                    <option value="laptop" selected>LAPTOP</option>
+                    <option value="mouse" selected> MOUSE</option>
+                    <option value="teclado" selected>TECLADO</option>
+                    <option value="monitor" disabled>MONITOR</option>
+                </optgroup>
+                <optgroup label="ROPA">
+                    <option value="camiseta" selected>CAMISETA</option>
+                    <option value="pantalon" disabled>PANTALON</option>
+                    <option value="bufanda" disabled>BUFANDA</option>
+                    <option value="monitor" disabled>MONITOR</option>
+                </optgroup>
+                <optgroup label="PERIFERICOS">
+                    <option value="camara" selected>CAMARA</option>
+                    <option value="camara"disabled>MOUSE</option>
+                    <option value="teclado" disabled>TECLADO</option>
+                    <option value="monitor" disabled>MONITOR</option>
+                </optgroup>
+            </select>
+            <br>
+            
+            <label for="evidencia_pdf">SUBA LA EVIDENCIA EN FORMATO PDF</label>
+            <br>
+            <input type="file"  
+            name="evidencia_pdf"
+            id="evidencia_pdf"
+            accept=".pdf"
+            required
+            >
+            <br>
+            <br>
+            <input type="hidden" value="pedido_compra_2025" name="tipo_formulario">
+        
+            <br>
+            <button type="submit">ENVIAR AL SERVIDOR</button>
+        </form>
+    </main>
+    <footer>
+        <p>
+            c 2025
+        </p>
+    </footer>
+</body>
+</html>

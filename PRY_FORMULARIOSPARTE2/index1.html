@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+         <form action="server.html" method="get">
+            <label for="Ingrese su ID, ejemplo LID4525"></label>
+            <input type="text" name="id" id="id" placeholder="INGRESE SU ID" pattern="[A-Z]{3}{0-9}{4}" required>
+            <br>
+            <!--SELECT FORM-->
+            <label for="lista_frutas">LISTA DE FRUTAS</label>
+            <select name="lista de frutas" id="lista de frutas" required autofocus>
+                <option value=""></option>
+                <option value="naranja">NARANJA</option>
+                <option value="uva" selected>UVA</option>
+                <option value="pera">PERA</option>
+                <option value="zapato" disabled>ZAPATOS</option>
+            </select>
+
+            <br>
+            <label for="musicas favoritas">SELECCIONE SUS MUSICAS FAVORITAS</label>
+            <br>
+            <select name="mis_musicas_favoritas" id="musicas_favoritas" multiple required>
+                <option value="" disabled></option>
+                <optgroup title="MUSICA DE SHAKIRA" label="MUSICA DE SHAKIRA">
+                    <option value="THE_HILLS" selected>THE HILLS of The Wekend</option>
+                    <option value="Back_to_Friends" disabled>Back to Friends</option>
+                    <option value="COMPANY" selected>Company</option>
+                </optgroup>
+                <optgroup title="MUSICA DE BAD BUNNY" label="MUSICA DE BAD BUNNY">
+                    <option value="THE_HILLS" selected>THE HILLS of The Wekend</option>
+                    <option value="Back_to_Friends" disabled>Back to Friends</option>
+                    <option value="COMPANY" selected>Company</option>
+                </optgroup>
+                <optgroup title="Musica de Aventura" label="Musica de Aventura">
+                    <option value="THE_HILLS" selected>THE HILLS of The Wekend</option>
+                    <option value="Back_to_Friends" disabled>Back to Friends</option>
+                    <option value="COMPANY" selected>Company</option>
+                </optgroup>
+
+
+            </select>
+            <br>
+            <!--TEXTAREA-->
+            <label for="DESCRIPCION">INGRESE SU DESCRIPCION</label>
+            <br>
+            <textarea name="DESCRIPCION" disabled id="DESCRIPCION" rows="5" cols="50">HOLA INGE DE PROGRAMACION WEB</textarea>
+            <button type="submit">ENVIAR AL SERVIDOR</button>
+        </form>
+    </main>
+    <footer>
+        <p>
+            c 2025
+        </p>
+    </footer>
+</body>
+</html>

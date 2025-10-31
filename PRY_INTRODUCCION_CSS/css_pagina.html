@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        CSS PAGINA
+    </title>
+    <style>
+        /*selector universal*/
+        *{
+            /*COLOR: aqua;*/
+            margin: 12px;
+            padding: 0px;  
+             
+        }
+            /*selector por elemento*/
+        h1{
+            color: blueviolet;
+            font-size: 15px; 
+            text-align: center; 
+        }
+        p{
+            color: orange;
+            font-size: 14px;
+        }
+
+        /*elementos quitas html*/
+        button{
+            background-color: gray;
+
+        }
+        /*propiedad class de nuestras eqtiquetas*/
+        .boton-personalizado{
+            background-color: green;
+            width: 100%;
+            border: none;
+            color: white;
+            font-size: 16px;
+            padding: 10px;
+            text-align: left;
+            padding: 5px;
+            margin: 2px;
+        }   
+        .text-derecho{
+            text-align: right;
+        }
+        .text-centrado{
+            text-align: center;
+        }
+        #boton-unico{
+           background-color: rgb(5,246, 150,0.8);
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        HOLA MUNDO
+    </h1>
+    <h1>
+        2025
+    </h1>
+    <p>
+        WELCOME TO PROGRAMACION WEB
+    </p>
+    <!--p{lksjhjkhsd}*100-->
+    <p>
+        PARRAFO DOS
+    </p>
+    <hr>
+
+    <button>BOTON SIN CLASE</button><button>BOTON SIN CLASE</button><button>BOTON SIN CLASE</button><button>BOTON SIN CLASE</button><button>BOTON SIN CLASE</button>
+    
+    <button class="boton-personalizado text-derecho">ENVIAR</button>
+    <button class="boton-personalizado">ENVIAR</button>
+    <button class="boton-personalizado">ENVIAR</button>
+    <button class="boton-personalizado">ENVIAR</button>
+    <button class="boton-personalizado">ENVIAR</button>
+    <hr>
+    <br>
+    <button id="boton-unico">
+        ADIOS
+    </button>
+</body>
+</html>

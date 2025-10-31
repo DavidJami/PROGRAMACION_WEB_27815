@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS INTERNO</title>
+    <style>
+        * {
+            margin: 12px;
+            padding: 0px;
+        }
+        
+        h1 {
+            color: blueviolet;
+            font-size: 20px;
+            text-align: center;
+            background-color: yellow;
+            padding: 15px;
+            margin: 20px;
+            width: 90%;
+            border: 2px solid purple;
+            border-radius: 10px;
+            height: 50px;
+        }
+        
+        input[type="text"] {
+            background-color: lightblue;
+            border: 2px solid blue;
+            padding: 10px;
+            font-size: 14px;
+            color: darkblue;
+            width: 80%;
+            margin: 8px;
+            border-radius: 5px;
+            height: 35px;
+            text-align: left;
+        }
+        
+        textarea {
+            background-color: lightgreen;
+            border: 2px solid green;
+            padding: 12px;
+            font-size: 13px;
+            color: darkgreen;
+            width: 80%;
+            margin: 8px;
+            border-radius: 5px;
+            height: 100px;
+            text-align: left;
+        }
+        
+        select {
+            background-color: lightyellow;
+            border: 2px solid orange;
+            padding: 10px;
+            font-size: 14px;
+            color: darkorange;
+            width: 83%;
+            margin: 8px;
+            border-radius: 5px;
+            height: 40px;
+            text-align: left;
+        }
+        
+        input[type="checkbox"] {
+            accent-color: red;
+            width: 20px;
+            height: 20px;
+            margin: 10px;
+            padding: 0px;
+            border: 2px solid red;
+            border-radius: 3px;
+            background-color: white;
+        }
+        
+        input[type="radio"] {
+            accent-color: purple;
+            width: 20px;
+            height: 20px;
+            margin: 10px;
+            padding: 0px;
+            border: 2px solid purple;
+            border-radius: 50%;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>FORMULARIO DE REGISTRO 2025</h1>
+    <hr>
+    <br>
+    
+    <label>Nombre Completo:</label>
+    <br>
+    <input type="text" placeholder="Ingrese su nombre">
+    
+    <br>
+    <label>Comentarios:</label>
+    <br>
+    <textarea placeholder="Escriba sus comentarios"></textarea>
+    
+    <br>
+    <label>País:</label>
+    <br>
+    <select>
+        <option>Ecuador</option>
+        <option>Colombia</option>
+        <option>Perú</option>
+    </select>
+    
+    <br>
+    <label>Acepto términos:</label>
+    <input type="checkbox">
+    
+    <br>
+    <label>Género:</label>
+    <input type="radio" name="genero"> Masculino
+    <input type="radio" name="genero"> Femenino
+    
+    <hr>
+    <br>
+</body>
+</html>

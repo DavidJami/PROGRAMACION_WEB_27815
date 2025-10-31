@@ -1,0 +1,68 @@
+* {
+    margin: 12px;
+    padding: 0px;
+}
+
+h1 {
+    color: green;
+    font-size: 22px;
+    text-align: center;
+    background-color: lightgreen;
+    padding: 18px;
+}
+
+input[type="text"] {
+    background-color: lightyellow;
+    border: 3px solid orange;
+    padding: 12px;
+    font-size: 15px;
+    color: brown;
+}
+
+textarea {
+    background-color: lightcyan;
+    border: 3px solid teal;
+    padding: 14px;
+    font-size: 14px;
+    color: darkslategray;
+}
+
+select {
+    background-color: lavender;
+    border: 3px solid purple;
+    padding: 12px;
+    font-size: 15px;
+    color: indigo;
+}
+
+input[type="checkbox"] {
+    accent-color: green;
+    width: 22px;
+    height: 22px;
+    margin: 12px;
+    background-color: white;
+}
+
+input[type="radio"] {
+    accent-color: orange;
+    width: 22px;
+    height: 22px;
+    margin: 12px;
+    background-color: white;
+}
+
+.boton-enviar {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+}
+
+#boton-limpiar {
+    background-color: rgb(5, 246, 150, 0.8);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+}
