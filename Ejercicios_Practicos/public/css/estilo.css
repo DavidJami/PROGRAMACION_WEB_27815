@@ -1,0 +1,12 @@
+/* accent-color */
+input {
+  accent-color: rgb(0, 255, 162);
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+input.custom {
+  accent-color: #007bff
+;
+}
