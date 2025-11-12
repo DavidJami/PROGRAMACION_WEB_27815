@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es" class="h-100">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <title>Datos Recibidos</title>
+    <link href="./public/vendor/assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./public/css/style.css" rel="stylesheet" />
+  </head>
+  
+  <body class="server-body">
+    <div class="container-box">
+      <h1 class="text-success mb-3">Datos Recibidos Correctamente</h1>
+      <p class="lead">Tu encuesta ha sido procesada exitosamente</p>
+      
+      <div class="alert alert-info">
+        Tus comentarios son muy importantes para nosotros poder mejorar la atencion en el Parque Tecnológico.
+      </div>
+      
+      <a href="index.html" class="btn-link">Volver a la pagina principal</a>
+    </div>
+
+    <footer class="server-footer">
+      <p class="mb-1">Todos los derechos reservados - Parque Tecnológico 2025</p>
+      <p class="mb-0">Sistema de Encuestas</p>
+    </footer>
+
+    <script src="./public/vendor/assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const ahora = new Date();
+      document.getElementById('fecha').textContent = ahora.toLocaleDateString('es-ES');
+      document.getElementById('hora').textContent = ahora.toLocaleTimeString('es-ES');
+    </script>
+  </body>
+</html>
